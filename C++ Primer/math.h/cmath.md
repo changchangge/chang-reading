@@ -1,0 +1,9 @@
+### 运算函数
+- pow(x,n)
+- exp(x)
+- log(x)
+- log10(x)
+- sin(x)
+- cos(x)
+- tan(x)
+- asin(x)
