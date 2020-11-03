@@ -7,3 +7,5 @@
 - cos(x)
 - tan(x)
 - asin(x)
+- fabs(x)
+ 
