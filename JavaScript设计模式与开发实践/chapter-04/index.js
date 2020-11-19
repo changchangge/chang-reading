@@ -4,3 +4,4 @@ const getSingle = (fn) => {
     return result || (result = fn.apply(this, arguments));
   };
 };
+
