@@ -32,6 +32,9 @@ function createNormalTree(arr) {
   const result = [new TreeNode(arr[0])];
   let temp;
   for (let i = 1; i < arr.length; i++) {
+    if(arr[i] === null){
+      continue;
+    }
     temp = new TreeNode(arr[i]);
     if (i % 2 === 0) {
       result[i / 2 - 1].right = temp;
