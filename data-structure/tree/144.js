@@ -10,19 +10,19 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-
-var inorderTraversal = function (root) {
+var preorderTraversal = function (root) {
   const result = [];
-  function findNode(Node) {
-    if (!Node) {
-      return;
+  const stack = [];
+  while (stack.length !== 0 || root !== null) {
+    while (root !== null) {
+      result.push(root.val);
+      stack.push(root);
+      root = root.left;
     }
-    findNode(Node.left);
-    result.push(Node.val);
-    findNode(Node.right);
+    root = stack.pop();
+    root = root.right;
   }
-  findNode(root, result);
   return result;
 };
 
-// Morris 遍历
+
