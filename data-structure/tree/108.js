@@ -10,6 +10,8 @@
  * @param {number[]} nums
  * @return {TreeNode}
  */
- var sortedArrayToBST = function(arr) {
 
+console.log([-10, -3, 0, 5, 9]);
+var sortedArrayToBST = function (arr) {
+  
 };

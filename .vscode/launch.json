@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/data-structure/tree/94.js"
+      "program": "${workspaceFolder}/data-structure/tree/106.js"
     }
   ]
 }
