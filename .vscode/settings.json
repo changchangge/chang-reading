@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.json": "jsonc",
+    "chrono": "cpp",
+    "ostream": "cpp"
+  }
+}
