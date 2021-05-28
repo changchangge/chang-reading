@@ -61,3 +61,17 @@ iter->mem
 iter1 == iter2
 iter1 != iter2
 ```
+- 迭代与迭代之间没有加法只有减法，所以 mid = (beg + end) / 2 不合法。所以要是用 mid = beg + (end-beg) / 2
+
+#### 数组
+- 数组和vector不同点是数组是固定长度的。
+```C++
+const char a[12]="Hello World"; // '\0'空字符串
+```
+- 不允许拷贝和赋值
+```C++
+int *ptrs[10]; // ptrs是含有10个整型指针的数组
+int (*Parray)[10] = &arr; // Parray是一个指向10个int数组的指针
+int (&arrRef)[10] = arr; // arrRef是一个含有10个int指针的数组的引用
+```
+- 定义在全局空数组会被初始化，而定义在局部作用域的不会

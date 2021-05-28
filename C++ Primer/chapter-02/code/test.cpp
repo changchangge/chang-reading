@@ -1,14 +1,26 @@
-#include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main()
 {
-  string s = "some string";
-  for (auto it = s.begin(); it != s.end() && !isspace(*it); ++it)
+  vector<int> a = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  const int sought = 5;
+  auto beg = a.begin();
+  auto end = a.end();
+  auto mid = beg + (end - beg) / 2;
+  while (mid != end && *mid != sought)
   {
-    *it = toupper(*it);
+    if (sought < *mid)
+    {
+      end = mid;
+    }
+    else
+    {
+      beg = mid + 1;
+    }
+    mid = beg + (end - beg) / 2;
   }
-  cout << s << endl;
+  cout << *mid << endl;
 }
